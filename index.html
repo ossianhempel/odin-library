@@ -8,20 +8,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <th colspan="0">Books</th>
-            <!-- <th>Author</th>
-            <th>Pages</th>
-            <th>Status</th> -->
-        </tr>
-        <tr class="first-data-row">
-            <!-- <td>test</td>
-            <td>test</td>
-            <td>test</td>
-            <td>test</td> -->
-        </tr>
-    </table>
-    <script src="myScript.js"></script>
+    
+    <div class="card-container">
+        
+    </div>
+    
+    <button class="add-book-button">NEW BOOK</button>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-form">
+                <h1 class="form-title"></h1>
+                <form action="" method="" class="add-book-form">
+                    <div class="modal-input-field">
+                        <label for="book-title">Title:</label>
+                        <input type="text" 
+                            name="book-title" 
+                            id="book-title" 
+                            class="modal-form-input">
+                    </div>
+                    <div class="modal-input-field">
+                        <label for="book-author">Author:</label>
+                        <input type="text" 
+                            name="book-author" 
+                            id="book-author" 
+                            class="modal-form-input">
+                    </div>
+                    <div class="modal-input-field">
+                        <label for="book-pages">Pages:</label>
+                        <input type="number" 
+                            min="0"
+                            name="book-pages" 
+                            id="book-pages" 
+                            class="modal-form-input">
+                    </div>
+                    <div class="modal-input-field">
+                        <span class="modal-read">Read?</span>
+                        <label class="container">
+                            <input type="checkbox" 
+                            name="book-read" 
+                            id="book-read" 
+                            class="checkmark">
+                        </label>
+                    </div>
+                    <div class="submit-modal-form">
+                        <button type="submit" class="btn-form-add-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script src="myScript.js"></script>
+
 </html>
