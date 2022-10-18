@@ -2,9 +2,13 @@
     background-color: rgb(226, 226, 226);
 }
 
+h1 {
+    font-size: 20px;
+}
+
 
 .card-container {
-    height: 600px;
+    /* height: 600px; */
     width: 1000px;
     border: 2px solid red;
 }
@@ -23,6 +27,8 @@
     border-radius: 10px;
     height: 40px;
     width: 80px;
+    color: white;
+    box-shadow: 2px 2px 10px gray;
 }
 
 .modal {
@@ -37,7 +43,7 @@
 }
 
 .modal-content {
-    background-color: blue;
+    background-color: rgb(64, 123, 200);
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
